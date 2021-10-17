@@ -1,0 +1,215 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 5C91AF59
+P 1550 2550
+F 0 "J1" H 1381 3347 60  0000 C CNN
+F 1 "HRO-TYPE-C-31-M-12" H 1381 3241 60  0000 C CNN
+F 2 "UnifiedDaughterboard:USB_Hybrid" H 1550 2550 60  0001 C CNN
+F 3 "" H 1550 2550 60  0001 C CNN
+	1    1550 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5C91AFCB
+P 5400 2525
+F 0 "J2" H 5480 2517 50  0000 L CNN
+F 1 "Conn_01x04" H 5480 2426 50  0000 L CNN
+F 2 "UnifiedDaughterboard:JST-S4B-ZRLFSN-0-0-MFG" H 5400 2525 50  0001 C CNN
+F 3 "~" H 5400 2525 50  0001 C CNN
+	1    5400 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5C91B042
+P 2400 3250
+F 0 "R1" H 2459 3296 50  0000 L CNN
+F 1 "5.1k" H 2459 3205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 2400 3250 50  0001 C CNN
+F 3 "~" H 2400 3250 50  0001 C CNN
+	1    2400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5C91B0D9
+P 2750 3250
+F 0 "R2" H 2809 3296 50  0000 L CNN
+F 1 "5.1k" H 2809 3205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 2750 3250 50  0001 C CNN
+F 3 "~" H 2750 3250 50  0001 C CNN
+	1    2750 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 2450 2    50   Input ~ 0
+D-
+Text GLabel 3100 2650 2    50   Input ~ 0
+D+
+$Comp
+L power:VCC #PWR0101
+U 1 1 5C91BF71
+P 2150 1950
+F 0 "#PWR0101" H 2150 1800 50  0001 C CNN
+F 1 "VCC" H 2167 2123 50  0000 C CNN
+F 2 "" H 2150 1950 50  0001 C CNN
+F 3 "" H 2150 1950 50  0001 C CNN
+	1    2150 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5C91C25E
+P 2100 3600
+F 0 "#PWR0102" H 2100 3350 50  0001 C CNN
+F 1 "GND" H 2105 3427 50  0000 C CNN
+F 2 "" H 2100 3600 50  0001 C CNN
+F 3 "" H 2100 3600 50  0001 C CNN
+	1    2100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0103
+U 1 1 5C91D023
+P 4875 2425
+F 0 "#PWR0103" H 4875 2275 50  0001 C CNN
+F 1 "VCC" H 4892 2598 50  0000 C CNN
+F 2 "" H 4875 2425 50  0001 C CNN
+F 3 "" H 4875 2425 50  0001 C CNN
+	1    4875 2425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4875 2425 5200 2425
+Wire Wire Line
+	5200 2525 4875 2525
+Wire Wire Line
+	4875 2625 5200 2625
+Wire Wire Line
+	4875 2725 5200 2725
+$Comp
+L power:GND #PWR0104
+U 1 1 5C91E0CE
+P 4875 2725
+F 0 "#PWR0104" H 4875 2475 50  0001 C CNN
+F 1 "GND" H 4880 2552 50  0000 C CNN
+F 2 "" H 4875 2725 50  0001 C CNN
+F 3 "" H 4875 2725 50  0001 C CNN
+	1    4875 2725
+	1    0    0    -1  
+$EndComp
+Text GLabel 4875 2525 0    50   Input ~ 0
+D-
+Text GLabel 4875 2625 0    50   Input ~ 0
+D+
+$Comp
+L Connector_Generic:Conn_01x01 MH1
+U 1 1 5C91EC0E
+P 4800 1100
+F 0 "MH1" H 4879 1142 50  0000 L CNN
+F 1 "Mount-M2" H 4879 1051 50  0000 L CNN
+F 2 "random-keyboard-parts:Generic-Mounthole" H 4800 1100 50  0001 C CNN
+F 3 "~" H 4800 1100 50  0001 C CNN
+	1    4800 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 MH2
+U 1 1 5C91EC94
+P 4800 1300
+F 0 "MH2" H 4879 1342 50  0000 L CNN
+F 1 "Mount-M2" H 4879 1251 50  0000 L CNN
+F 2 "random-keyboard-parts:Generic-Mounthole" H 4800 1300 50  0001 C CNN
+F 3 "~" H 4800 1300 50  0001 C CNN
+	1    4800 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 MH3
+U 1 1 5C91ECC0
+P 4800 1500
+F 0 "MH3" H 4879 1542 50  0000 L CNN
+F 1 "Mount-M2" H 4879 1451 50  0000 L CNN
+F 2 "random-keyboard-parts:Generic-Mounthole" H 4800 1500 50  0001 C CNN
+F 3 "~" H 4800 1500 50  0001 C CNN
+	1    4800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 MH4
+U 1 1 5C91ECE4
+P 4800 1700
+F 0 "MH4" H 4879 1742 50  0000 L CNN
+F 1 "Mount-M2" H 4879 1651 50  0000 L CNN
+F 2 "random-keyboard-parts:Generic-Mounthole" H 4800 1700 50  0001 C CNN
+F 3 "~" H 4800 1700 50  0001 C CNN
+	1    4800 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5C91FF24
+P 4600 1300
+F 0 "#PWR0105" H 4600 1050 50  0001 C CNN
+F 1 "GND" H 4605 1127 50  0000 C CNN
+F 2 "" H 4600 1300 50  0001 C CNN
+F 3 "" H 4600 1300 50  0001 C CNN
+	1    4600 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 2450 2150 2450
+Wire Wire Line
+	2150 2550 2150 2450
+Connection ~ 2150 2450
+Wire Wire Line
+	3100 2650 2150 2650
+Wire Wire Line
+	2150 2750 2150 2650
+Connection ~ 2150 2650
+Wire Wire Line
+	1550 3450 2100 3450
+Wire Wire Line
+	2100 3450 2100 3600
+Wire Wire Line
+	2400 3350 2400 3450
+Wire Wire Line
+	2400 3450 2100 3450
+Connection ~ 2100 3450
+Wire Wire Line
+	2750 3350 2750 3450
+Wire Wire Line
+	2750 3450 2400 3450
+Connection ~ 2400 3450
+Wire Wire Line
+	2150 2250 2400 2250
+Wire Wire Line
+	2400 2250 2400 3150
+Wire Wire Line
+	2150 2150 2750 2150
+Wire Wire Line
+	2750 2150 2750 3150
+NoConn ~ 2150 3050
+NoConn ~ 2150 3150
+Wire Wire Line
+	1250 3450 1550 3450
+Connection ~ 1550 3450
+NoConn ~ 4600 1100
+NoConn ~ 4600 1500
+NoConn ~ 4600 1700
+$EndSCHEMATC
